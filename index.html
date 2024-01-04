@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Generate a <br> <span class="generate">random password</span></h1>
+        <p>Never use an insecure password again.</p>
+
+        <div class="text-container">
+            <input type="number" class="passLength" id="password-length" placeholder="10">
+            <button onclick="renderPassword()" id="enterButton"><ion-icon name="flash-outline" size="small"></ion-icon>Generate Password</button>
+        </div>
+        <hr>
+        <div class="passwordBlocks">
+            <div class="column-left">
+                <div class="passwords" id="passwordOne"><p></p></div>
+                <div class="passwords" id="passwordTwo"><p></p></div>
+            </div>
+            <div class="column-right">
+                <div class="passwords" id="passwordThree"><p></p></div>
+                <div class="passwords" id="passwordFour"><p></p></div>
+            </div>
+        </div>
+
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
